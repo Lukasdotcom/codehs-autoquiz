@@ -59,7 +59,8 @@ async function main() {
 			answer_dict[id] = String(result.correctAnswer);
     }
   }
-  alert("You will get another alert. Copy the result of the alert, submit the exam and then retake it. Then run this program again and paste the stuff you copied from the previous running again.");
+  alert("You will get another alert. Copy the result of the alert, submit the exam and then retake it. Then run this program again and paste the stuff you copied from the previous running again. This will also be printed in the console if you miss the alert.");
   alert(JSON.stringify(answer_dict));
+  console.info(JSON.stringify(answer_dict));
 }
 main();
